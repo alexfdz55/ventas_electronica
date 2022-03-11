@@ -10,9 +10,9 @@ dependencies:
   animate_do: ^2.1.0
   get: 4.5.1
   http: ^0.13.3
-  share_plus: 3.0.0
-  path_provider: ^2.0.4
-  cached_network_image: ^3.2.0
+  # share_plus: 3.0.0
+  # path_provider: ^2.0.4
+  # cached_network_image: ^3.2.0
   flutter: 
     sdk: flutter
 
@@ -27,9 +27,12 @@ flutter:
     - assets/images/
     - assets/images/categories/
     - assets/images/arduinos/
+    - assets/images/modulos/
     - assets/images/node/
     - assets/images/componentes/
     - assets/images/drivers/
-    - assets/images/modulos/
+    - assets/images/drivers_mp/
+    - assets/images/reles/
     - assets/images/mp/
     - assets/images/stm/
+    - assets/images/otros/

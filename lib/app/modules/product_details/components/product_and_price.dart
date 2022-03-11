@@ -45,15 +45,16 @@ class ProductAndPrice extends StatelessWidget {
             ),
           ),
           Spacer(),
-          Container(
-            width: 90,
-            child: Column(
-              children: [
-                Text('$price CUP', style: stylePrice),
-                // SizedBox(width: 20),
-              ],
-            ),
-          )
+          if (_.product!.price != 0.0)
+            Container(
+              width: 90,
+              child: Column(
+                children: [
+                  Text('$price CUP', style: stylePrice),
+                  // SizedBox(width: 20),
+                ],
+              ),
+            )
         ],
       ),
     );

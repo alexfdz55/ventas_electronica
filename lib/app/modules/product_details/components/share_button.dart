@@ -10,7 +10,7 @@ class ShareButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () async {
-        _.shareProduct();
+        // _.shareProduct();
       },
       child: Container(
         margin: const EdgeInsets.only(right: 40.0),

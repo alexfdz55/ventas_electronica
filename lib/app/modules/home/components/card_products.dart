@@ -107,7 +107,7 @@ class CardProducts extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Spacer(),
-          Text('\$$_price', style: stylePrice),
+          _price == '0.00' ? Container() : Text('\$$_price', style: stylePrice),
         ],
       ),
     );
@@ -131,11 +131,12 @@ class CardProducts extends StatelessWidget {
                       color: Colors.black, fontWeight: FontWeight.w500),
                   maxLines: 3,
                 ),
-                Text(
-                  'Cantidad: ${this.product.quantity}',
-                  style: Theme.of(context).textTheme.headline5!.copyWith(
-                      color: Colors.black, fontWeight: FontWeight.w500),
-                ),
+                if (this.product.quantity != 0)
+                  Text(
+                    'Cantidad: ${this.product.quantity}',
+                    style: Theme.of(context).textTheme.headline5!.copyWith(
+                        color: Colors.black, fontWeight: FontWeight.w500),
+                  ),
               ],
             ),
           ),

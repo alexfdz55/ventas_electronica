@@ -32,7 +32,7 @@ class ProductDetailsView extends GetView<ProductDetailsController> {
                 color: controller.isShrink ? Colors.black : Colors.white,
               ),
               actions: [
-                ShareButton(),
+                // ShareButton(),
               ],
               backgroundColor: Theme.of(context).primaryColor,
               expandedHeight: 250.0,
@@ -44,7 +44,7 @@ class ProductDetailsView extends GetView<ProductDetailsController> {
                   right: 10.0,
                   bottom: _.isShrink ? 5 : 15.0,
                 ),
-                title: CategoryAndFavorite(),
+                // title: CategoryAndFavorite(),
                 stretchModes: [
                   StretchMode.zoomBackground,
                 ],
@@ -56,7 +56,7 @@ class ProductDetailsView extends GetView<ProductDetailsController> {
                     //   child: Image.asset(_.product!.imageUrl),
                     // ),
                     Image.asset(_.product!.imageUrl),
-                    _opacityContainer(),
+                    // _opacityContainer(),
                   ],
                 ),
               ),

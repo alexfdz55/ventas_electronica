@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:share_plus/share_plus.dart';
+// import 'package:path_provider/path_provider.dart';
+// import 'package:share_plus/share_plus.dart';
 
 import 'package:ventas_electronica/app/data/models/product_model.dart';
 import 'package:http/http.dart' as http;
@@ -52,19 +52,19 @@ class ProductDetailsController extends GetxController {
   }
 
   // Share Products
-  shareProduct() async {
-    final uri = Uri.parse(product!.imageUrl);
-    final res = await http.get(uri);
-    final bytes = res.bodyBytes;
+  // shareProduct() async {
+  //   final uri = Uri.parse(product!.imageUrl);
+  //   final res = await http.get(uri);
+  //   final bytes = res.bodyBytes;
 
-    final temp = await getTemporaryDirectory();
-    final path = '${temp.path}/image.jpg';
-    File(path).writeAsBytesSync(bytes);
+  //   final temp = await getTemporaryDirectory();
+  //   final path = '${temp.path}/image.jpg';
+  //   File(path).writeAsBytesSync(bytes);
 
-    await Share.shareFiles(
-      [path],
-      text:
-          'Wahoo Express\n${product!.name}\n${product!.category}\n\$${product!.price.toStringAsFixed(2)}\nVisitanos en:\nhttps://wahoosushibar.com',
-    );
-  }
+  //   await Share.shareFiles(
+  //     [path],
+  //     text:
+  //         'Wahoo Express\n${product!.name}\n${product!.category}\n\$${product!.price.toStringAsFixed(2)}\nVisitanos en:\nhttps://wahoosushibar.com',
+  //   );
+  // }
 }

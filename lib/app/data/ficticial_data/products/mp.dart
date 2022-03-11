@@ -1,0 +1,78 @@
+import 'package:ventas_electronica/app/data/models/product_model.dart';
+
+const _baseImage = 'assets/images/mp';
+
+List<Product> mpProduct = [
+  Product(
+    id: '1',
+    category: 'Motores de paso',
+    name: '28BYJ-48',
+    description: 'Unipolar (5V)',
+    price: 50,
+    imageUrl: '$_baseImage/MP1.jpg',
+    quantity: 2,
+  ),
+  Product(
+    id: '2',
+    category: 'Motores de paso',
+    name: 'Unipolar pequeño',
+    description: '...',
+    price: 50,
+    imageUrl: '$_baseImage/MP2.jpg',
+    quantity: 1,
+  ),
+  Product(
+    id: '3',
+    category: 'Motores de paso',
+    name: 'Bipolar pequeño',
+    description: '...',
+    price: 70,
+    imageUrl: '$_baseImage/MP3.jpg',
+    quantity: 1,
+  ),
+  Product(
+    id: '4',
+    category: 'Motores de paso',
+    name: 'Bipolar',
+    description: '...',
+    price: 80,
+    imageUrl: '$_baseImage/MP4.jpg',
+    quantity: 1,
+  ),
+  Product(
+    id: '5',
+    category: 'Motores de paso',
+    name: 'Bipolar',
+    description: '...',
+    price: 100,
+    imageUrl: '$_baseImage/MP5.jpg',
+    quantity: 3,
+  ),
+  Product(
+    id: '6',
+    category: 'Motores de paso',
+    name: 'Bipolar',
+    description: '...',
+    price: 120,
+    imageUrl: '$_baseImage/MP6.jpg',
+    quantity: 1,
+  ),
+  Product(
+    id: '7',
+    category: 'Motores de paso',
+    name: 'Unipolar',
+    description: '...',
+    price: 100,
+    imageUrl: '$_baseImage/MP7.jpg',
+    quantity: 4,
+  ),
+  Product(
+    id: '8',
+    category: 'Motores de paso',
+    name: 'Bipolar',
+    description: '...',
+    price: 150,
+    imageUrl: '$_baseImage/MP8.jpg',
+    quantity: 1,
+  ),
+];

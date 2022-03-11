@@ -60,7 +60,7 @@ class HomeController extends GetxController {
     categories[0].isSelected = true;
     products = await productsProvider.getById('1');
 
-    for (var i = 0; i < 7; i++) {
+    for (var i = 0; i < categories.length; i++) {
       final p = await productsProvider.getById((i + 1).toString());
       productsByCategory.add(ProductsGirdView(p));
     }
