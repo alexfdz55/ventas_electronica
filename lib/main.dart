@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Wahoo Sushi Express Menu",
+      title: "Ventas de Electrónica",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
       theme: theme(),
